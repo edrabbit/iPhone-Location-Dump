@@ -1,2 +1,9 @@
 A simple method for taking the iPhone's SQLite db storing location data and dump out info in CSV
 Also adjusts the timestamp so that it is a unix timestamp in GMT
+
+To Use:
+If you have a jailbroken phone:
+Connect to wireless and run the following on your desktop:
+  scp root@[YOUR IPHONE IP]:/private/var/root/Library/Caches/locationd/consolidated.db .
+Then
+  python dump_db.py consolidated.db > file_to_save_to.csv
