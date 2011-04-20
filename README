@@ -1,0 +1,2 @@
+A simple method for taking the iPhone's SQLite db storing location data and dump out info in CSV
+Also adjusts the timestamp so that it is a unix timestamp in GMT
